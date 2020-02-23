@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a13124d0-927b-4725-b004-74da1924a8fa" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Y7CIkM29oNiMnk3r4gb2LOz4sN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/sunburst (2)/sunburst" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a13124d0-927b-4725-b004-74da1924a8fa" name="Default Changelist" comment="" />
+      <created>1582284167996</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582284167996</updated>
+      <workItem from="1582284173524" duration="10195000" />
+      <workItem from="1582297191623" duration="5423000" />
+      <workItem from="1582306586361" duration="287000" />
+      <workItem from="1582314520185" duration="608000" />
+      <workItem from="1582363655708" duration="8238000" />
+      <workItem from="1582384863286" duration="82000" />
+      <workItem from="1582390039238" duration="1741000" />
+      <workItem from="1582411247314" duration="7531000" />
+      <workItem from="1582478003824" duration="5984000" />
+      <workItem from="1582484108451" duration="4036000" />
+      <workItem from="1582488276084" duration="2487000" />
+      <workItem from="1582491439885" duration="253000" />
+      <workItem from="1582491838094" duration="1572000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="522" y="236" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582493136014">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="522" y="236" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1582493136014" />
+    <state x="932" y="188" key="FileChooserDialogImpl" timestamp="1582492038865">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="932" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1582492038865" />
+    <state x="465" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1582491838298">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="465" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1582491838298" />
+    <state x="463" y="164" width="611" height="536" key="find.popup" timestamp="1582477960639">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="463" y="164" width="611" height="536" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1582477960639" />
+  </component>
+</project>

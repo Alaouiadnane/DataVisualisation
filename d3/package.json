@@ -1,0 +1,14 @@
+{
+  "name": "@mbostock/the-impact-of-vaccines",
+  "main": "fdebcb5d0f4890f4@258.js",
+  "version": "258.0.0",
+  "homepage": "https://observablehq.com/@mbostock/the-impact-of-vaccines",
+  "author": {
+    "name": "Mike Bostock",
+    "url": "https://observablehq.com/@mbostock"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}

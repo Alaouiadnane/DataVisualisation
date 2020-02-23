@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Sequences Sunburst</title>
+<link rel="stylesheet" type="text/css" href="./inspector.css">
+<style>
+       body{
+           margin: 0;
+       }
+    /* Add a black background color to the top navigation */
+.topnav {
+    margin: 0;
+  background-color: #333;
+  overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #af624a;
+  color: white;
+}
+</style>
+<body>
+<div class="topnav">
+      <a class="active" href="../index1.html">Home</a>
+      <a  href="../index.html">Intercative Color Legend with Menus</a>
+    <a href="../Data-Viz-last/index.html">Intercative Pie and Chart</a>
+    <a class="active" href="../sunburst/index.html">Sunburst</a>
+    <a href="../parallel-coordinates-dataviz/index.html">Parallel-coordinates</a>
+    <a  href="../d3/index.html">Parallel-coordinates soliman</a>
+    </div>
+
+<script type="module">
+
+import define from "./index.js";
+import {Runtime, Library, Inspector} from "./runtime.js";
+
+const runtime = new Runtime();
+const main = runtime.module(define, Inspector.into(document.body));
+
+</script>
+<script type="text/javascript">
+</script>
+</body>

@@ -1,0 +1,94 @@
+<!doctype html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+        /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #af624a;
+  color: white;
+}
+</style>
+<body>
+<div class="topnav" style="margin: auto auto auto; width: 100%; font-family: 'Poppins', sans-serif;">
+      <a  href="../index1.html">Home</a>
+      <a href="../index.html">Intercative Color Legend with Menus</a>
+    <a href="../Data-Viz-last/index.html">Intercative Pie and Chart</a>
+    <a href="../sunburst/index.html">Sunburst</a>
+    <a class="active" href="./index.html">Parallel-coordinates</a>
+    <a  href="../d3/index.html">Parallel-coordinates soliman</a>
+    </div>
+<h1>DATAVIZ : Parallel Coordinates</h1>
+<p>A quel fourchette de prix correspond une categorie de vehicule ?</p>
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.13/d3.min.js"></script>
+<script src="d3.parcoords.js"></script>
+<script src="divgrid.js"></script>
+
+<div id="dataviz" class="parcoords"></div>
+<div id="grid"></div>
+
+<script id="brushing">// quantitative colour scale
+var green_to_blue = d3.scale.linear()
+    .domain([9, 50])
+    .range(["#7AC143", "#00B0DD"])
+    .interpolate(d3.interpolateLab);
+
+var color = function(d) { return green_to_blue(d['occasion']); };
+
+var parcoords = d3.parcoords()("#dataviz")
+    .color(color)
+    .alpha(0.4);
+
+// On charge le csv et on créé le graphe
+d3.csv('https://gist.githubusercontent.com/JrHamza/4f9238c9d500f81654137beb4799c9b7/raw/c7cec0410c8c8ca9a4bb55bbd8df0ec8609be019/catalogue3.csv', function(data) {
+    parcoords
+        .data(data)
+        .render()
+        .brushMode("1D-axes");  // on active le mode de "brush" fourni par la librairie
+
+    // creation de la datatable, row hover highlighting
+    var grid = d3.divgrid();
+    d3.select("#grid")
+        .datum(data.slice(0,5))
+        .call(grid)
+        .selectAll(".row")
+        .on({
+            "mouseover": function(d) { parcoords.highlight([d]) },
+            "mouseout": parcoords.unhighlight
+        });
+
+    // update de la data table lorsqu'on applique le brush
+    parcoords.on("brush", function(d) {
+        d3.select("#grid")
+            .datum(d.slice(0,20))
+            .call(grid)
+            .selectAll(".row")
+            .on({
+                "mouseover": function(d) { parcoords.highlight([d]) },
+                "mouseout": parcoords.unhighlight
+            });
+    });
+});
+</script>
+</body>

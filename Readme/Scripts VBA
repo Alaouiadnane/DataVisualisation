@@ -1,0 +1,118 @@
+Private Sub traitement()
+
+Set f1 = ThisWorkbook.Sheets("datacsv2")
+Set f2 = ThisWorkbook.Sheets("Ventes1")
+Set f3 = ThisWorkbook.Sheets("Ventes2")
+
+Dim stringf1 As String
+Dim stringf2 As String
+Dim stringf3 As String
+
+stringf1 = ""
+stringf2 = ""
+stringf3 = ""
+
+
+
+'hada clients
+For i = 2 To Sheets("Ventes2").Cells(1, 1).End(xlDown).Row
+
+    wrd1Array = Split(Sheets("datacsv2").Cells(i, 1), ",")
+    stringf1 = stringf1 & wrdArray(6) & "," & wrdArray(0) & "," & wrdArray(4) & "," & wrdArray(2)
+    Debug.Print stringf1
+    Sheets("result").Cells(i, 1) = stringf1
+    stringf1 = ""
+
+Next
+
+    'hada immatriculations
+For i = 2 To Sheets("Ventes1").Cells(1, 1).End(xlDown).Row
+
+    wrd2Array = Split(Sheets("Ventes1").Cells(i, 1), ",")
+    stringf2 = stringf2 & wrd2Array(0) & "," & wrd2Array(8)
+    Debug.Print stringf2
+    Sheets("result").Cells(i, 5) = stringf2
+    stringf2 = ""
+
+Next
+
+
+For i = 2 To Sheets("Ventes2").Cells(1, 1).End(xlDown).Row
+
+    wrd3Array = Split(Sheets("Ventes2").Cells(i, 1), ",")
+    stringf3 = stringf3 & wrd3Array(0) & "," & wrd3Array(8)
+    Debug.Print stringf3
+    Sheets("result").Cells(i + Sheets("result").Cells(1, 1).End(xlDown).Row, 5) = stringf3
+    stringf3 = ""
+
+Next
+
+
+End Sub
+
+
+Private Sub traitement()
+
+
+Dim stringf1 As String
+Dim stringf2 As String
+Dim stringf3 As String
+
+stringf1 = ""
+stringf2 = ""
+stringf3 = ""
+
+
+    'hada immatriculations
+'For i = 2 To Sheets("datacsv2").Cells(1, 1).End(xlDown).Row
+'
+   ' wrd2Array = Split(Sheets("datacsv2").Cells(i, 1), ",")
+ '
+  '  Do While wrd2Array(0) <> Sheets("datacsv2").Cells(1, 1).End(xlDown).Row
+   '     wrd3Array = Split(Sheets("datacsv2").Cells(i, 1), ",")
+    '    If wrd2Array(0) Then
+    'Loop
+    '
+    '
+    'stringf2 = stringf2 & wrd2Array(0) & "," & wrd2Array(8)
+    'Debug.Print stringf2
+    'Sheets("datacsv2").Cells(i, 4) = stringf2
+    'stringf2 = ""
+
+'Next
+
+For i = 2 To Sheets("datacsv2").Cells(1, 1).End(xlDown).Row
+
+End Sub
+
+
+Private Sub trait()
+
+Dim stringf1 As String
+Dim stringf2 As String
+Dim stringf3 As String
+
+stringf1 = ""
+stringf2 = ""
+stringf3 = ""
+
+
+    'hada immatriculations
+For i = 2 To 1000
+
+    wrd2Array = Split(Sheets("datacsv2").Cells(i, 1), ",")
+    j = 2
+
+    Do While wrd2Array(0) <> Sheets("datacsv2").Cells(j, 4)
+        j = j + 1
+    Loop
+
+    If wrd2Array(0) = Sheets("datacsv2").Cells(j, 4) Then
+        Sheets("datacsv2").Cells(i, 1) = Sheets("datacsv2").Cells(i, 1) & "," & Sheets("datacsv2").Cells(j, 4)
+    Else
+    Next
+    End If
+
+
+Next
+End Sub
