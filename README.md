@@ -4,7 +4,7 @@ Membres du groupe et leur techniques de visualisation choisis:
   - RACHIDI ALAOUI Adnane :  Interactive Color Legend with Menus
      - BENAZZOUZ Oualid : Interactive Pie and Chart
     - JRAD Hamza :  Parallel Coordinates
-     - ACHAHBAR Soliman : 
+     - ACHAHBAR Soliman : WSJ Graphic
     - HALADOU ISSA Ali : Sunburst Sequences
     
  
